@@ -12,9 +12,9 @@
     <div class="codeText">
       <pre>
         <code>
-          function escape(s) {
-            return '&ltscript&gtconsole.log("'+s'");&lt/script&gt';
-          }
+  function escape(s) {
+    return '&ltscript&gtconsole.log("'+s'");&lt/script&gt';
+  }
         </code>
       </pre>
     </div>  
@@ -34,10 +34,10 @@
     <div class="codeText">
       <pre>
         <code>
-          function escape(s) {
-            s = s.replace(/"/g, '\\"');
-            return '<script>console.log("' + s + '");</script>';
-          }
+  function escape(s) {
+    s = s.replace(/"/g, '\\"');
+    return '<script>console.log("' + s + '");</script>';
+  }
         </code>
       </pre>
     </div>  
@@ -56,10 +56,10 @@
     <div class="codeText">
       <pre>
         <code>
-          function escape(s) {
-            s = JSON.stringify(s);
-            return '<script>console.log(' + s + ');</script>';
-          }
+  function escape(s) {
+    s = JSON.stringify(s);
+    return '<script>console.log(' + s + ');</script>';
+  }
         </code>
       </pre>
     </div>  
