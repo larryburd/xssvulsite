@@ -1,0 +1,33 @@
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+h5 {
+  margin: 0px;
+}
+
+.codeText {
+  margin-top: 5px;
+}
+
+textarea{
+  width: 500px;
+  height: 100px;
+}
+
+#hiddenText {
+  display: none;
+}
+
+.submitBtn {
+  display: block;
+}
+
+.outputText {
+  width: 500px;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 5px;
+  background-color: lightgrey;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <input type="text" id="hiddenText">
+    <h1>Popping Alerts</h1>
+
+    <h2>Warmup</h2>
+    <h5>The code below generates HTML in an unsafe way. Prove it by popping an alert.</h3>  
+    <div class="codeText">
+      <pre>
+        <code>
+          function escape(s) {
+            return '&ltscript&gtconsole.log("'+s'");&lt/script&gt';
+          }
+        </code>
+      </pre>
+    </div>  
+    <br />
+    <label>Input</label>
+    <textarea id="warmInput" class="form-control" autofocus="true" placeholder="">
+    </textarea>
+    <input class="submitBtn" type="submit" value="Submit" onclick="main('WARMUP')"> 
+
+    <label>Output</label>
+    <div id="warmOutput" class="outputText"></div>
+    
+    </input>
+
+    <h2>Adobe Escaping</h2>
+    <h5>The code below generates HTML in an unsafe way. Prove it by popping an alert.</h3>  
+    <div class="codeText">
+      <pre>
+        <code>
+          function escape(s) {
+            s = s.replace(/"/g, '\\"');
+            return '<script>console.log("' + s + '");</script>';
+          }
+        </code>
+      </pre>
+    </div>  
+    <br />
+    <label>Input</label>
+    <textarea id="adobeInput" class="form-control" autofocus="true" placeholder="">
+    </textarea>
+    <input class="submitBtn" type="submit" value="Submit" onclick="main('ADOBE')"> 
+
+    <label>Output</label>
+    <div id="adobeOutput" class="outputText"></div>
+    </input>
+
+    <h2>JSON.stringify() Escaping</h2>
+    <h5>The code below generates HTML in an unsafe way. Prove it by popping an alert.</h3>  
+    <div class="codeText">
+      <pre>
+        <code>
+          function escape(s) {
+            s = JSON.stringify(s);
+            return '<script>console.log(' + s + ');</script>';
+          }
+        </code>
+      </pre>
+    </div>  
+    <br />
+    <label>Input</label>
+    <textarea id="jsonInput" class="form-control" autofocus="true" placeholder="">
+    </textarea>
+    <input class="submitBtn" type="submit" value="Submit" onclick="main('STRINGIFY')"> 
+
+    <label>Output</label>
+    <div id="jsonOutput" class="outputText"></div>
+    </input>
+  </body>
+</html>
